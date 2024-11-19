@@ -1,7 +1,9 @@
 ***Prepare structures of CYS for GPX6 mouse and human***
 
-Stucture 1 - SH + H2O2   - thiol
-Structure 2 - S- + H2O2  - thiolate
+Stucture 1 - SH + H2O2   - thiol    
+
+Structure 2 - S- + H2O2  - thiolate 
+
 Stucture 3 - SOH - sulfenic acid
 
 ***Running Amber on the structures***
