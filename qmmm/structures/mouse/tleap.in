@@ -2,10 +2,10 @@ source leaprc.protein.ff14SB
 source leaprc.gaff2
 source leaprc.water.tip3p
 loadamberprep PRX.prepi
-loadamberparams PRX.frcmod   
+loadamberparams PRX.frcmod
 
 # Load the parameters file for the ligand
-sys = loadPdb thiolfinal.pdb
+sys = loadPdb thiolfinal2.pdb
 
 # Add Sodium until the system is neutral
 addIons2 sys Na+ 0
@@ -23,3 +23,4 @@ savePDB sys thiolclean_solvated.pdb
 saveamberparm sys thiolclean_solvated.prmtop thiolclean_solvated.inpcrd
 
 quit
+

@@ -51,14 +51,13 @@ Loading parameters: ./PRX.frcmod
 Reading force field modification type file (frcmod)
 Reading title:
 Remark line goes here
-Loading PDB file: ./thiolfinal.pdb
+Loading PDB file: ./thiolateclean.pdb
 
 /home/hp/anaconda3/envs/AmberTools23/bin/teLeap: Warning!
-Unknown residue: PRX   number: 195   type: Terminal/last
-..relaxing end constraints to try for a dbase match
+Unknown residue: SUL   number: 48   type: Nonterminal
 
 /home/hp/anaconda3/envs/AmberTools23/bin/teLeap: Warning!
-  -no luck
+Unknown residue: GLP   number: 82   type: Nonterminal
 Created a new atom named: HB1 within residue: .R<NPRO 1>
 Created a new atom named: HG1 within residue: .R<NPRO 1>
 Created a new atom named: HD1 within residue: .R<NPRO 1>
@@ -169,9 +168,24 @@ Created a new atom named: HB1 within residue: .R<SER 47>
 Created a new atom named: HG1 within residue: .R<SER 47>
 Created a new atom named: HN within residue: .R<PHE 48>
 Created a new atom named: HB1 within residue: .R<PHE 48>
-Created a new atom named: HN within residue: .R<CYS 49>
-Created a new atom named: HB1 within residue: .R<CYS 49>
-Created a new atom named: HG1 within residue: .R<CYS 49>
+Creating new UNIT for residue: SUL sequence: 49
+
+/home/hp/anaconda3/envs/AmberTools23/bin/teLeap: Warning!
+One sided connection. Residue () missing connect0 atom.
+Created a new atom named: N within residue: .R<SUL 49>
+Created a new atom named: CA within residue: .R<SUL 49>
+Created a new atom named: C within residue: .R<SUL 49>
+Created a new atom named: O within residue: .R<SUL 49>
+Created a new atom named: CB within residue: .R<SUL 49>
+Created a new atom named: SG within residue: .R<SUL 49>
+Created a new atom named: HN within residue: .R<SUL 49>
+Created a new atom named: HA within residue: .R<SUL 49>
+Created a new atom named: HB1 within residue: .R<SUL 49>
+Created a new atom named: HB2 within residue: .R<SUL 49>
+Created a new atom named: HG1 within residue: .R<SUL 49>
+
+/home/hp/anaconda3/envs/AmberTools23/bin/teLeap: Warning!
+One sided connection. Residue (default_name) missing connect1 atom.
 Created a new atom named: HN within residue: .R<GLY 50>
 Created a new atom named: HA1 within residue: .R<GLY 50>
 Created a new atom named: HN within residue: .R<LEU 51>
@@ -246,9 +260,30 @@ Created a new atom named: HB1 within residue: .R<LYS 82>
 Created a new atom named: HG1 within residue: .R<LYS 82>
 Created a new atom named: HD1 within residue: .R<LYS 82>
 Created a new atom named: HE1 within residue: .R<LYS 82>
-Created a new atom named: HN within residue: .R<GLN 83>
-Created a new atom named: HB1 within residue: .R<GLN 83>
-Created a new atom named: HG1 within residue: .R<GLN 83>
+Creating new UNIT for residue: GLP sequence: 83
+
+/home/hp/anaconda3/envs/AmberTools23/bin/teLeap: Warning!
+One sided connection. Residue () missing connect0 atom.
+Created a new atom named: N within residue: .R<GLP 83>
+Created a new atom named: CA within residue: .R<GLP 83>
+Created a new atom named: C within residue: .R<GLP 83>
+Created a new atom named: O within residue: .R<GLP 83>
+Created a new atom named: CB within residue: .R<GLP 83>
+Created a new atom named: CG within residue: .R<GLP 83>
+Created a new atom named: CD within residue: .R<GLP 83>
+Created a new atom named: NE2 within residue: .R<GLP 83>
+Created a new atom named: OE1 within residue: .R<GLP 83>
+Created a new atom named: HN within residue: .R<GLP 83>
+Created a new atom named: HA within residue: .R<GLP 83>
+Created a new atom named: HB1 within residue: .R<GLP 83>
+Created a new atom named: HB2 within residue: .R<GLP 83>
+Created a new atom named: HG1 within residue: .R<GLP 83>
+Created a new atom named: HG2 within residue: .R<GLP 83>
+Created a new atom named: HE21 within residue: .R<GLP 83>
+Created a new atom named: HE22 within residue: .R<GLP 83>
+
+/home/hp/anaconda3/envs/AmberTools23/bin/teLeap: Warning!
+One sided connection. Residue (default_name) missing connect1 atom.
 Created a new atom named: HN within residue: .R<GLU 84>
 Created a new atom named: HB1 within residue: .R<GLU 84>
 Created a new atom named: HG1 within residue: .R<GLU 84>
@@ -534,26 +569,21 @@ Created a new atom named: HN within residue: .R<CSER 195>
 Created a new atom named: HB1 within residue: .R<CSER 195>
 Created a new atom named: HG1 within residue: .R<CSER 195>
   Added missing heavy atom: .R<CSER 195>.A<OXT 12>
-Creating new UNIT for residue: PRX sequence: 196
-Created a new atom named: O1 within residue: .R<PRX 196>
-Created a new atom named: O2 within residue: .R<PRX 196>
-Created a new atom named: H1 within residue: .R<PRX 196>
-Created a new atom named: H2 within residue: .R<PRX 196>
-  total atoms in file: 3517
+  total atoms in file: 3507
   Leap added 15 missing atoms according to residue templates:
        1 Heavy
        14 H / lone pairs
-  The file contained 478 atoms not in residue templates
+  The file contained 496 atoms not in residue templates
 4 Na+ ions required to neutralize.
 Adding 4 counter ions to "sys" using 1A grid
-Used default radius  1.50 for 478 atoms
+Used default radius  1.50 for 496 atoms
 Grid extends from solute vdw + 1.37  to  7.37
 Resolution:      1.00 Angstrom.
 Calculating grid charges
-Placed Na+ in sys at (20.55, 16.66, 48.16).
-Placed Na+ in sys at (33.55, 47.66, 14.16).
-Placed Na+ in sys at (46.55, 36.66, 25.16).
-Placed Na+ in sys at (9.55, 46.66, 42.16).
+Placed Na+ in sys at (20.58, 17.18, 48.24).
+Placed Na+ in sys at (33.58, 45.17, 14.24).
+Placed Na+ in sys at (14.58, 35.17, 47.24).
+Placed Na+ in sys at (45.58, 38.17, 26.24).
 
 Done adding ions.
  0.000000 0 1 0
@@ -561,29 +591,59 @@ Done adding ions.
 Adding 0 counter ions to "sys" using 1A grid
  (using default radius 1.500000 for HG11)
  (using default radius 1.500000 for HG11)
+ (using default radius 1.500000 for N)
+ (using default radius 1.500000 for CA)
+ (using default radius 1.500000 for C)
+ (using default radius 1.500000 for O)
+ (using default radius 1.500000 for CB)
+ (using default radius 1.500000 for SG)
+ (using default radius 1.500000 for N)
+ (using default radius 1.500000 for CA)
+ (using default radius 1.500000 for C)
+ (using default radius 1.500000 for O)
+ (using default radius 1.500000 for CB)
+ (using default radius 1.500000 for CG)
+ (using default radius 1.500000 for CD)
+ (using default radius 1.500000 for NE2)
+ (using default radius 1.500000 for OE1)
+ (using default radius 1.500000 for HE21)
+ (using default radius 1.500000 for HE22)
  (using default radius 1.500000 for HG11)
  (using default radius 1.500000 for HG11)
  (using default radius 1.500000 for HG11)
  (using default radius 1.500000 for HG11)
- (using default radius 1.500000 for O1)
- (using default radius 1.500000 for O2)
-  Solute vdw bounding box:              45.527 46.192 49.574
-  Total bounding box for atom centers:  71.527 72.192 75.574
+  Solute vdw bounding box:              43.580 46.173 49.322
+  Total bounding box for atom centers:  69.580 72.173 75.322
   Solvent unit box:                     18.774 18.774 18.774
  (using default radius 1.500000 for HG11)
  (using default radius 1.500000 for HG11)
+ (using default radius 1.500000 for N)
+ (using default radius 1.500000 for CA)
+ (using default radius 1.500000 for C)
+ (using default radius 1.500000 for O)
+ (using default radius 1.500000 for CB)
+ (using default radius 1.500000 for SG)
+ (using default radius 1.500000 for N)
+ (using default radius 1.500000 for CA)
+ (using default radius 1.500000 for C)
+ (using default radius 1.500000 for O)
+ (using default radius 1.500000 for CB)
+ (using default radius 1.500000 for CG)
+ (using default radius 1.500000 for CD)
+ (using default radius 1.500000 for NE2)
+ (using default radius 1.500000 for OE1)
+ (using default radius 1.500000 for HE21)
+ (using default radius 1.500000 for HE22)
  (using default radius 1.500000 for HG11)
  (using default radius 1.500000 for HG11)
  (using default radius 1.500000 for HG11)
  (using default radius 1.500000 for HG11)
- (using default radius 1.500000 for O1)
- (using default radius 1.500000 for O2)
-  Total vdw box size:                   74.141 75.345 78.411 angstroms.
-  Volume: 438010.754 A^3 
-  Mass > 216046.216 amu,  Density > 0.819 g/cc
+  Total vdw box size:                   72.535 75.345 78.018 angstroms.
+  Volume: 426376.875 A^3 
+  Mass > 209149.022 amu,  Density > 0.815 g/cc
       (type - hence mass - of one or more atoms could not be found)
-  Added 10765 residues.
-Writing pdb file: thiolclean_solvated.pdb
+  Added 10395 residues.
+Writing pdb file: thiolateclean_solvated.pdb
    printing CRYST1 record to PDB file with box info
 
 /home/hp/anaconda3/envs/AmberTools23/bin/teLeap: Warning!
@@ -702,9 +762,17 @@ FATAL:  Atom .R<SER 47>.A<HB1 13> does not have a type.
 FATAL:  Atom .R<SER 47>.A<HG1 14> does not have a type.
 FATAL:  Atom .R<PHE 48>.A<HN 21> does not have a type.
 FATAL:  Atom .R<PHE 48>.A<HB1 22> does not have a type.
-FATAL:  Atom .R<CYS 49>.A<HN 12> does not have a type.
-FATAL:  Atom .R<CYS 49>.A<HB1 13> does not have a type.
-FATAL:  Atom .R<CYS 49>.A<HG1 14> does not have a type.
+FATAL:  Atom .R<SUL 49>.A<N 1> does not have a type.
+FATAL:  Atom .R<SUL 49>.A<CA 2> does not have a type.
+FATAL:  Atom .R<SUL 49>.A<C 3> does not have a type.
+FATAL:  Atom .R<SUL 49>.A<O 4> does not have a type.
+FATAL:  Atom .R<SUL 49>.A<CB 5> does not have a type.
+FATAL:  Atom .R<SUL 49>.A<SG 6> does not have a type.
+FATAL:  Atom .R<SUL 49>.A<HN 7> does not have a type.
+FATAL:  Atom .R<SUL 49>.A<HA 8> does not have a type.
+FATAL:  Atom .R<SUL 49>.A<HB1 9> does not have a type.
+FATAL:  Atom .R<SUL 49>.A<HB2 10> does not have a type.
+FATAL:  Atom .R<SUL 49>.A<HG1 11> does not have a type.
 FATAL:  Atom .R<GLY 50>.A<HN 8> does not have a type.
 FATAL:  Atom .R<GLY 50>.A<HA1 9> does not have a type.
 FATAL:  Atom .R<LEU 51>.A<HN 20> does not have a type.
@@ -779,9 +847,23 @@ FATAL:  Atom .R<LYS 82>.A<HB1 24> does not have a type.
 FATAL:  Atom .R<LYS 82>.A<HG1 25> does not have a type.
 FATAL:  Atom .R<LYS 82>.A<HD1 26> does not have a type.
 FATAL:  Atom .R<LYS 82>.A<HE1 27> does not have a type.
-FATAL:  Atom .R<GLN 83>.A<HN 18> does not have a type.
-FATAL:  Atom .R<GLN 83>.A<HB1 19> does not have a type.
-FATAL:  Atom .R<GLN 83>.A<HG1 20> does not have a type.
+FATAL:  Atom .R<GLP 83>.A<N 1> does not have a type.
+FATAL:  Atom .R<GLP 83>.A<CA 2> does not have a type.
+FATAL:  Atom .R<GLP 83>.A<C 3> does not have a type.
+FATAL:  Atom .R<GLP 83>.A<O 4> does not have a type.
+FATAL:  Atom .R<GLP 83>.A<CB 5> does not have a type.
+FATAL:  Atom .R<GLP 83>.A<CG 6> does not have a type.
+FATAL:  Atom .R<GLP 83>.A<CD 7> does not have a type.
+FATAL:  Atom .R<GLP 83>.A<NE2 8> does not have a type.
+FATAL:  Atom .R<GLP 83>.A<OE1 9> does not have a type.
+FATAL:  Atom .R<GLP 83>.A<HN 10> does not have a type.
+FATAL:  Atom .R<GLP 83>.A<HA 11> does not have a type.
+FATAL:  Atom .R<GLP 83>.A<HB1 12> does not have a type.
+FATAL:  Atom .R<GLP 83>.A<HB2 13> does not have a type.
+FATAL:  Atom .R<GLP 83>.A<HG1 14> does not have a type.
+FATAL:  Atom .R<GLP 83>.A<HG2 15> does not have a type.
+FATAL:  Atom .R<GLP 83>.A<HE21 16> does not have a type.
+FATAL:  Atom .R<GLP 83>.A<HE22 17> does not have a type.
 FATAL:  Atom .R<GLU 84>.A<HN 16> does not have a type.
 FATAL:  Atom .R<GLU 84>.A<HB1 17> does not have a type.
 FATAL:  Atom .R<GLU 84>.A<HG1 18> does not have a type.
@@ -1066,12 +1148,8 @@ FATAL:  Atom .R<THR 194>.A<HN 15> does not have a type.
 FATAL:  Atom .R<CSER 195>.A<HN 13> does not have a type.
 FATAL:  Atom .R<CSER 195>.A<HB1 14> does not have a type.
 FATAL:  Atom .R<CSER 195>.A<HG1 15> does not have a type.
-FATAL:  Atom .R<PRX 196>.A<O1 1> does not have a type.
-FATAL:  Atom .R<PRX 196>.A<O2 2> does not have a type.
-FATAL:  Atom .R<PRX 196>.A<H1 3> does not have a type.
-FATAL:  Atom .R<PRX 196>.A<H2 4> does not have a type.
 
 /home/hp/anaconda3/envs/AmberTools23/bin/teLeap: Fatal Error!
 Failed to generate parameters
 
-Exiting LEaP: Errors = 1; Warnings = 4; Notes = 0.
+Exiting LEaP: Errors = 1; Warnings = 8; Notes = 0.

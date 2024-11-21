@@ -1,0 +1,24 @@
+source leaprc.protein.ff14SB 
+source leaprc.gaff2
+source leaprc.water.tip3p
+
+# Load the parameters file for the ligand
+sys = loadPdb 7fc2clean.pdb
+
+# Add Sodium until the system is neutral
+addIons2 sys Na+ 0
+
+# Add Chlorine until the system is neutral
+addIons2 sys Cl- 0
+
+# Solvate with an octahedral box with 13 Å buffer
+solvatebox sys TIP3PBOX 13  
+
+# Save the solvated AMBER PDB
+savePDB sys thiolclean_solvated.pdb
+
+# Save the solvated AMBER topology and coordinates
+saveamberparm sys thiolclean_solvated.prmtop thiolclean_solvated.inpcrd
+
+quit
+
