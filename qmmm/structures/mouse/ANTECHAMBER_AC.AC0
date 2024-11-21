@@ -1,0 +1,23 @@
+CHARGE      0.00 ( 0 )
+Formula: H5 C3 N1 O1 S1 
+ATOM      1  N   SUL     1      36.562  33.563  52.586  0.000000         N
+ATOM      2  CA  SUL     1      37.452  32.867  51.719  0.000000        CA
+ATOM      3  C   SUL     1      38.980  33.099  52.104  0.000000         C
+ATOM      4  O   SUL     1      39.165  33.594  53.253  0.000000         O
+ATOM      5  CB  SUL     1      37.217  33.239  50.262  0.000000        CB
+ATOM      6  SG  SUL     1      37.933  32.156  49.005  0.000000        SG
+ATOM      7  HN  SUL     1      36.135  34.358  52.199  0.000000        HN
+ATOM      8  HA  SUL     1      37.283  31.821  51.868  0.000000        HA
+ATOM      9  HB1 SUL     1      37.581  34.246  50.040  0.000000       HB1
+ATOM     10  HB2 SUL     1      36.187  33.242  50.062  0.000000       HB2
+ATOM     11  HG1 SUL     1      37.904  30.665  47.750  0.000000       HG1
+BOND    1    1    2    0      N   CA
+BOND    2    1    7    0      N   HN
+BOND    3    2    3    0     CA    C
+BOND    4    2    5    0     CA   CB
+BOND    5    2    8    0     CA   HA
+BOND    6    3    4    0      C    O
+BOND    7    5    6    0     CB   SG
+BOND    8    5    9    0     CB  HB1
+BOND    9    5   10    0     CB  HB2
+BOND   10    6   11    0     SG  HG1

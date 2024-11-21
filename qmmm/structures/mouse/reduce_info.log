@@ -1,0 +1,29 @@
+Processing file: --standard input--
+Building His ring NH Hydrogens.
+Building or keeping OH & SH Hydrogens.
+Rotating existing OH & SH Hydrogens
+WARNING: atom HN21 from GLP will be treated as hydrogen
+WARNING: atom HN21 from GLP will be treated as hydrogen
+WARNING: atom HN22 from GLP will be treated as hydrogen
+WARNING: atom HN22 from GLP will be treated as hydrogen
+WARNING: atom HN21 from GLP will be treated as hydrogen
+WARNING: atom HN22 from GLP will be treated as hydrogen
+WARNING: atom HN22 from GLP will be treated as hydrogen
+WARNING: atom HN21 from GLP will be treated as hydrogen
+VDW dot density = 16/A^2
+Probe radius = 0.25A
+Orientation penalty scale = 9999 (999900%)
+Eliminate contacts within 3 bonds.
+Ignore atoms with |occupancy| <= 0.01 during adjustments.
+Waters ignored if B-Factor >= 40 or |occupancy| < 0.66
+Aromatic rings in amino acids accept hydrogen bonds.
+Flipping Asn, Gln and His groups.
+For each flip state, bumps where gap is more than 0.4A are indicated with '!'.
+Rotating NH3 Hydrogens.
+Not processing Met methyls.
+Found 8 hydrogens (8 hets)
+Standardized 0 hydrogens (0 hets)
+Added 0 hydrogens (0 hets)
+If you publish work which uses reduce, please cite:
+Word, et. al. (1999) J. Mol. Biol. 285, 1735-1747.
+For more information see http://kinemage.biochem.duke.edu
